@@ -1,0 +1,87 @@
+<div>
+  <H4>Patterns</H4>
+  <h5>Creational Patterns</h5>
+  <div>
+    These design patterns provide a way to create objects while hiding the creation logic,
+    rather than instantiating objects directly using new operator. This gives program more flexibility
+    in deciding which objects need to be created for a given use case.
+  </div>
+
+  <br />
+
+  <h5>Structural Patterns</h5>
+  <div>
+    These design patterns concern class and object composition. Concept of inheritance is used to
+    compose interfaces and define ways to compose objects to obtain new functionalities.
+  </div>
+
+  <br />
+
+  <h5>Behavioral Patterns</h5>
+  <div>
+    These design patterns are specifically concerned with communication between objects.
+  </div>
+</div>
+
+<hr />
+
+<div>
+  <h5>Fluent Builder</h5>
+  <div>
+    A creational design pattern, which allows constructing complex objects step by step.
+  </div>
+
+  <br />
+
+  <span>Advantages:</span>
+  <ul>
+    <li>Quality/readability/simplicitiy when creating a complex object.</li>
+    <li>Various configurations for the same object (Food, drinks, reports, etc.).</li>
+    <li>Code reuse.</li>
+  </ul>
+
+  <button class="btn btn-primary" (click)="onDownloadFluentBuilderReport('excel')" [disabled]="loading">
+    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" *ngIf="loading"></span>
+    Get Excel Fluent Builder Report
+  </button>
+
+  <br /><br />
+
+  <button class="btn btn-primary" (click)="onDownloadFluentBuilderReport('pdf')" [disabled]="loading">
+    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" *ngIf="loading"></span>
+    Get PDF Fluent Builder Report
+  </button>
+</div>
+
+<hr />
+
+<div>
+  <h5>Strategy</h5>
+  <div>
+    A behavioral design pattern that turns a set of behaviors into objects and makes them
+    interchangeable inside original context object.
+  </div>
+
+  <br />
+
+  <span>Advantages:</span>
+  <ul>
+    <li>Allows for flexibility in implementation.</li>
+    <li>It’s easily extendable.</li>
+    <li>Easily change strategy (behavior) of an object.</li>
+    <li>Provide different implementations of the same behavior.</li>
+  </ul>
+
+  <button class="btn btn-primary" (click)="onDownloadStrategyReport('excel')" [disabled]="loading">
+    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" *ngIf="loading"></span>
+    Get Excel Strategy Report
+  </button>
+
+  <br /><br />
+
+  <button class="btn btn-primary" (click)="onDownloadStrategyReport('pdf')" [disabled]="loading">
+    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" *ngIf="loading"></span>
+    Get PDF Strategy Report
+  </button>
+</div>
+
